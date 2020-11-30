@@ -6599,6 +6599,9 @@ function getRandomColor() {
     Math.floor(Math.random() * colors.length)
   ];
   document.body.style.backgroundColor = randomColor ;
+  button.style.backgroundColor = randomColor ;
+  author.style.color = randomColor ;
+  textbox.style.color = randomColor ;
 }
 
 function getRandomQuote() {
@@ -6621,5 +6624,3 @@ getRandomQuote();
 
 // Your code below
 button.addEventListener("click",getRandomQuote);
-
-// Your code above
