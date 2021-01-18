@@ -6593,7 +6593,6 @@ let currentAuthor = '';
 let textbox = document.getElementById("text");
 let author = document.getElementById("author");
 let button = document.getElementById("new-quote");
-let icon = document.getElementById("quote-box");
 
 
 function getRandomColor() {
@@ -6601,10 +6600,8 @@ function getRandomColor() {
     Math.floor(Math.random() * colors.length)
   ];
   document.body.style.backgroundColor = randomColor ;
+  document.body.style.color = randomColor ;
   button.style.backgroundColor = randomColor ;
-  author.style.color = randomColor ;
-  textbox.style.color = randomColor ;
-  icon.style.color = randomColor ;
 }
 
 function getRandomQuote() {
@@ -6616,8 +6613,8 @@ function getRandomQuote() {
   currentAuthor = randomQuote.author;
 
   // Your code below
-  textbox.innerHTML = currentQuote;
-  author.innerHTML = currentAuthor;
+  textbox.textContent = currentQuote;
+  author.textContent = currentAuthor;
   // Your code above
 
   getRandomColor();
