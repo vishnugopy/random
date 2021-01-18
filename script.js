@@ -6593,6 +6593,8 @@ let currentAuthor = '';
 let textbox = document.getElementById("text");
 let author = document.getElementById("author");
 let button = document.getElementById("new-quote");
+let icon = document.getElementById("quote-box");
+
 
 function getRandomColor() {
   const randomColor = colors[
@@ -6602,6 +6604,7 @@ function getRandomColor() {
   button.style.backgroundColor = randomColor ;
   author.style.color = randomColor ;
   textbox.style.color = randomColor ;
+  icon.style.color = randomColor ;
 }
 
 function getRandomQuote() {
